@@ -1,0 +1,18 @@
+DOCTYPE
+html
+  link(rel='stylesheet' href='/bootstrapcss/bootstrap.css')
+  link(rel='stylesheet' href='/css/client.css')
+  script(src='/jquery/jquery.min.js')
+  script(src='/socketio/socket.io.js')
+  script(src='/bootstrap/bootstrap.js')
+  script(type='text/javascript' src='/scripts/client.js')
+  head
+    title JUN
+  body
+    include ./top.pug
+    include ./modal.pug
+    div(class='container-fluid')
+      div(class='row')
+        div(class='col-md-1' style='background-color: ivory')
+        div(class='col-md-10' id='mainDiv')
+        div(class='col-md-1' style='background-color: ivory')

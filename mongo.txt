@@ -1,0 +1,50 @@
+objectID
+Type : alarm
+machine
+date
+msg
+Meta
+	time
+	code
+	contents
+	cause
+	execute
+	type
+
+
+objectID
+Type : head
+machine
+Date
+Msg
+Meta
+	time
+	seqNo
+	contents
+
+
+objectID
+Type : common
+machine
+Date
+Msg
+Meta
+	time
+	contents
+	tecttime
+
+
+---------------
+Machines
+
+objectID
+Name
+
+
+db.machines.insert({"name":"1000","position":"GM2","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"2100","position":"GM2","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"2200","position":"RN2","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"2220", "position":"RN1","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"GM1_7" ,"position":"GM1","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"GM1_15","position":"GM1","status":"RUN","recipe":[{"cnt":3}]})
+db.machines.insert({"name":"GM1_3","position":"GM1","status":"DOWN","recipe":[{"cnt":3}]})

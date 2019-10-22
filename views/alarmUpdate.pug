@@ -1,0 +1,23 @@
+div(class='row')
+  table(class='table table-striped')
+    h3 알람코드 업데이트
+    thead
+      tr
+        th ID
+        th DATE
+        th WOW
+        th FILE
+        th 알람리스트
+        th 알람코드
+    each val in machines
+      tr
+        td= val.name
+        td= today
+        td WOW
+        td
+          input(type='file' id= val.name)
+        td
+          button(type='button' class='btn btn-default' data-toggle='modal' data-target='#myModal' onclick='readFile2("'+ val.name + '")') SEND
+        td
+          button(type='button' class='btn btn-default' data-toggle='modal' onclick='alarmCode("'+ val.name + '")') OP
+div(id='readFile')

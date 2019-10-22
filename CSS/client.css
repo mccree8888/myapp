@@ -1,0 +1,16 @@
+
+.modal-lg, .modal-xl {
+    max-width: 1000px;
+}
+
+.modalTableThCode {
+  width: 50px;
+}
+
+.modalTableThCodeText {
+  width: 200px;
+}
+
+.modalTablePadingClose{
+  padding:5px;
+}

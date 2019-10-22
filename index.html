@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/bootstrapcss/bootstrap.css">
+
+<script src="/jquery/jquery.min.js"></script>
+<script src="/socketio/socket.io.js"></script>
+<script src = "/bootstrap/bootstrap.js"></script>
+
+
+<script>
+
+var socket = io.connect();
+
+socket.on('news', function (data) {
+	 console.log(data);
+	 socket.emit('my other event', { my: 'data' });
+ });
+
+function button1_click() {
+	alert("버튼1을 누르셨습니다.");
+}
+
+var mydata =
+[
+    {
+        "id": 0,
+        "name": "test0",
+        "price": "$0"
+    },
+    {
+        "id": 1,
+        "name": "test1",
+        "price": "$1"
+    },
+    {
+        "id": 2,
+        "name": "test2",
+        "price": "$2"
+    },
+    {
+        "id": 3,
+        "name": "test3",
+        "price": "$3"
+    }
+	];
+
+	var mydata2 =
+	[
+	    {
+	        "id": 4,
+	        "name": "test4",
+	        "price": "$4"
+	    },
+	    {
+	        "id": 5,
+	        "name": "test5",
+	        "price": "$5"
+	    },
+	    {
+	        "id": 6,
+	        "name": "test6",
+	        "price": "$6"
+	    },
+	    {
+	        "id": 7,
+	        "name": "test7",
+	        "price": "$7"
+	    }
+		];
+
+
+	function setTable(data) {
+	  var obj, dbParam, xmlhttp, myObj, x, txt = "";
+	 // dbParam = JSON.stringify(obj);
+
+	     // myObj = JSON.parse(this.responseText);
+	      txt += "<table class='table table-striped' >"
+				txt += "<tr><td>ID</td><td>NAME</td><td>PRICE</td></tr>";
+	      for (x in data) {
+	        txt += "<tr><td>" + data[x].id + "</td><td>" + data[x].name + "</td><td>" + data[x].price + "</td></tr>";
+	      }
+	      txt += "</table>"
+	      	document.getElementById("demo").innerHTML = txt;
+	      }
+
+
+
+</script>
+<head>
+    <title>Blog</title>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-1" style="background-color: ivory">.col-md-1</div>
+		<div class="col-md-10">
+			<button type="button" class="btn btn-primary btn-lg" onclick="setTable(mydata);" > click 1</button>
+			<button type="button" class="btn btn-primary btn-lg" onclick="setTable(mydata2);" > click 2</button>
+		</div>
+    <div class="col-md-1" style="background-color: ivory">.col-md-1</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-1" style="background-color: ivory">.col-md-1</div>
+		<div class="col-md-10">
+
+			<p id="demo">
+
+			</p>
+
+		</div>
+		<div class="col-md-1" style="background-color: ivory">.col-md-1</div>
+	</div>
+</div>
+
+
+</body>
+
+</html>
