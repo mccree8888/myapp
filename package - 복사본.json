@@ -1,22 +1,28 @@
 {
-  "name": "mongolog",
+  "name": "myapp",
   "version": "1.0.0",
   "description": "<!--lint disable no-literal-urls-->\r <p align=\"center\">\r   <a href=\"https://nodejs.org/\">\r     <img\r       alt=\"Node.js\"\r       src=\"https://nodejs.org/static/images/logo-light.svg\"\r       width=\"400\"\r     />\r   </a>\r </p>",
-  "main": "app.js",
-  "dependencies": {
-    "npm": "^6.14.13",
-    "npm-check-updates": "^11.6.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.4.0",
+    "mongoose": "^5.5.2",
+    "pug": "^2.0.3",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mccree8888/myapp.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mccree8888/myapp/issues"
   },
