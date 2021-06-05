@@ -1,11 +1,10 @@
 {
-  "name": "mongolog",
+  "name": "myapp",
   "version": "1.0.0",
   "description": "<!--lint disable no-literal-urls-->\r <p align=\"center\">\r   <a href=\"https://nodejs.org/\">\r     <img\r       alt=\"Node.js\"\r       src=\"https://nodejs.org/static/images/logo-light.svg\"\r       width=\"400\"\r     />\r   </a>\r </p>",
   "main": "app.js",
   "dependencies": {
-    "npm": "^6.14.13",
-    "npm-check-updates": "^11.6.0"
+    "npm": "^6.14.13"
   },
   "devDependencies": {},
   "scripts": {

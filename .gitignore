@@ -2,3 +2,6 @@
 *.exe
 
 node_modules/
+css/
+mongo/
+*.md

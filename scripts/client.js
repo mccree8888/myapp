@@ -1,11 +1,12 @@
 
 
-var socket = io.connect();
+var socket = io.connect('http://localhost:3000');
 
-socket.on('news', function (data) {
-	 console.log(data);
-	 socket.emit('my other event', { my: 'data' });
- });
+
+ socket.on('news', function (data) {
+	console.log(data);
+	socket.emit('client login', { clientData : '클라이언트 접속' });
+});
 
 function button1_click() {
 	alert("버튼1을 누르셨습니다.");

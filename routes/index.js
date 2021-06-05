@@ -17,6 +17,11 @@ module.exports = function(app)
    res.render('index');
   })
 
+  
+  app.get('/test', function(req, res){
+    res.render('test');
+  });
+
   app.get('/alarmUpdate', function(req, res){
     var dt = new Date();
     var da = dt.getFullYear() + "-" + (dt.getMonth()+1) + "-" + dt.getDate();
